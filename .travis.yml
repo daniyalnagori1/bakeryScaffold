@@ -5,11 +5,11 @@ python:
 
 install: 
    - pip3 install --upgrade pip 
-   - pip install coveralls
+   - pip3 install coveralls
    - npm install lcov-parse
 
 script: 
- python test.py
+ python3 test.py
 
 after_success:
  - coveralls
