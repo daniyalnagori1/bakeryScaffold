@@ -4,12 +4,12 @@ python:
   - "3.7"
 
 install: 
-   - pip install --upgrade pip 
+   - pip3 install --upgrade pip 
    - pip install coveralls
    - npm install lcov-parse
 
 script: 
- python test.py
+ pytest -s -q
 
 after_success:
  - coveralls
