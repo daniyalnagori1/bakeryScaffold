@@ -1,15 +1,15 @@
 dist: xenial   # required for Python >= 3.7
 language: python
 python:
-  - "3.7.3"
+  - "3.7"
 
 install: 
-   - pip3 install --upgrade pip 
-   - pip3 install coveralls
-   - pip3 install lcov-parse
+   - pip install --upgrade pip 
+   - pip install coveralls
+   - npm install lcov-parse
 
 script: 
- python3 test.py
+ python test.py
 
 after_success:
  - coveralls
